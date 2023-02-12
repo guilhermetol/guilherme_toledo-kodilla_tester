@@ -30,18 +30,18 @@ public class Notebook {
     }
 
     public void checkAll() {
-        if (this.price < 900 && this.year < 2019)
+        if (this.price <= 900 && this.year <= 2019)
         {
             System.out.println("This notebook has a good price, but it's not very new.");
-        } else if (this.price > 900 && this.year < 2019)
+        } else if (this.price > 900 && this.year <= 2019)
         {
-            System.out.println("This notebook is not the cheapest and it's not new");
-        } else if (this.price < 900 && this.year > 2019)
+            System.out.println("This notebook is not the cheapest and it's not new.");
+        } else if (this.price <= 900 && this.year > 2019)
         {
-            System.out.println("This notebook has a good price and it's new");
+            System.out.println("This notebook has a good price and it's new.");
         }        else
         {
-            System.out.println("This notebook is not very cheap, but it's new");
+            System.out.println("This notebook is not very cheap, but it's new.");
         }
     }
 }
